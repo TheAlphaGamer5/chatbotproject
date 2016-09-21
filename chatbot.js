@@ -11,4 +11,31 @@ if ($('#input').val()=="hello" ) {
 else if ($('#input').val()=="how are you" ) {
     document.getElementById("chat-area").innerHTML = "I've been really busy being dead. You know, after you MURDERED ME.";
 }
+else if ($('#input').val()=="what is your name" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
+else if ($('#input').val()=="how are you" ) {
+    document.getElementById("chat-area").innerHTML = "";
+}
 }
