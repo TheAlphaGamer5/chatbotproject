@@ -22,7 +22,8 @@ else if ($('#input').val()=="how old are you" ) {
 
 
 
-
+ document.getElementById("chat-area").textContent = document.getElementById("input").value;
+ 
 
 
 }
