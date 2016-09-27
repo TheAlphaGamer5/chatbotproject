@@ -37,6 +37,9 @@ else if ($('#input').val()=="howdy" ) {
 else if ($('#input').val()=="hola" ) {
   document.getElementById("chat-area").innerHTML = "Hello and, again, welcome to the Aperture Science computer-aided enrichment center.";
 }
+else if ($('#input').val()=="hi" ) {
+  document.getElementById("chat-area").innerHTML = "Hello and, again, welcome to the Aperture Science computer-aided enrichment center.";
+}
 else if ($('#input').val()=="how are you" ) {
     document.getElementById("chat-area").innerHTML = "Im doing fine but I've been really busy being dead. You know, after you MURDERED ME.";
 }
