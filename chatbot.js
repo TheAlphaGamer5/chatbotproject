@@ -3,8 +3,18 @@ var inputTalk;
 
 function talk(){
 inputTalk = document.getElementById("input").value;
+//document.getElemmentById("chat-area").textContent += inputTalk;
+question = "User: " + inputTalk + "<br>";
+document.getElementById("chat-area").innerHTML += question;
 
-
+var n = question.search(/how are you/i);
+var o = question.search(/old/i);
+var t = question.search(/time/i);
+var u = question.search(/year/i);
+var v = question.search(/day/i);
+var w = question.search(/date/i);
+var e = question.search(/picture/i);
+var da = new Date(Date.now());
 
 
 
