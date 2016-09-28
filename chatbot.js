@@ -7,14 +7,14 @@ inputTalk = document.getElementById("input").value;
 question = "User: " + inputTalk + "<br>";
 document.getElementById("chat-area").innerHTML += question;
 
-var n = question.search(/how are you/i);
-var o = question.search(/old/i);
-var t = question.search(/time/i);
-var u = question.search(/year/i);
-var v = question.search(/day/i);
-var w = question.search(/date/i);
-var e = question.search(/picture/i);
-var da = new Date(Date.now());
+var how = question.search(/how are you/i);
+var old = question.search(/old/i);
+var time = question.search(/time/i);
+var year = question.search(/year/i);
+var day = question.search(/day/i);
+var date = question.search(/date/i);
+var picture = question.search(/picture/i);
+//var da = new Date(Date.now());
 
 
 
