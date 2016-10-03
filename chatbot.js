@@ -2,6 +2,8 @@ var question;
 var inputTalk;
 
 function talk(){
+
+
 inputTalk = document.getElementById("input").value;
 //document.getElemmentById("chat-area").textContent += inputTalk;
 question = "User: " + inputTalk + "<br>";
@@ -25,7 +27,11 @@ var weekday = da.getUTCDay();
 //  console.log("y u no work");
   //document.getElementById("chat-area").textContent = document.getElementById("input").value;
 
+  $(document).keydown(function(e) {
+ if (e.keyCode == 71) {
   document.getElementById("input").value
+ }
+});
 if (hi > -1) {
   document.getElementById("chat-area").innerHTML += "GLaDOS: Hello and, again, welcome to the Aperture Science computer-aided enrichment center."  + "<br>";
 }
