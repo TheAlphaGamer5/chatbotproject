@@ -7,7 +7,7 @@ inputTalk = document.getElementById("input").value;
 question = "User: " + inputTalk + "<br>";
 document.getElementById("chat-area").innerHTML += question;
 
-var weekdayArray = ["it is Sunday", " it is Monday", " it is Tuesday", " it is Wednesday", " it is Thursday", " it is Friday", " it is Saturday"];
+var weekdayArray = ["Saturday", "Sunday", " Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 
 var hi = question.search(/hello/i)
@@ -21,7 +21,7 @@ var date = question.search(/date/i);
 var song = question.search(/sing/i);
 var picture = question.search(/picture/i);
 var da = new Date(Date.now());
-
+var weekday = da.getUTCDay();
 //  console.log("y u no work");
   //document.getElementById("chat-area").textContent = document.getElementById("input").value;
 
@@ -49,7 +49,7 @@ else if (year > -1) {
   document.getElementById("chat-area").innerHTML += "GLaDOS: the year is" +" " + da.getFullYear()  + "<br>";
 }
 else if (day > -1) {
-  document.getElementById("chat-area").innerHTML += "GLaDOS: today is " +" " + da.getUTCDay();  + "<br>";
+  document.getElementById("chat-area").innerHTML += "GLaDOS: today is " +" " +  weekdayArray[weekday] + "<br>";
 }
 else if (date > -1) {
   document.getElementById("chat-area").innerHTML += "GLaDOS: today is the" +" " + da.getDate() +"th"  + "<br>";
