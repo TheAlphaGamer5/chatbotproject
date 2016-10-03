@@ -27,11 +27,7 @@ var weekday = da.getUTCDay();
 //  console.log("y u no work");
   //document.getElementById("chat-area").textContent = document.getElementById("input").value;
 
-  $(document).keydown(function(e) {
- if (e.keyCode == 71) {
-  document.getElementById("input").value
- }
-});
+
 if (hi > -1) {
   document.getElementById("chat-area").innerHTML += "GLaDOS: Hello and, again, welcome to the Aperture Science computer-aided enrichment center."  + "<br>";
 }
@@ -64,4 +60,11 @@ else {
     document.getElementById("chat-area").innerHTML += "GLaDOS: please, state something actually meaningful."  + "<br>";
 }
 
+}
+
+function uniKeyCode(event) {
+  var key = event.keyCode;
+  if (key == 13) {
+    talk();
+  }
 }
